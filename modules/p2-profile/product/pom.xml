@@ -591,6 +591,9 @@
                                 <featureArtifactDef>
                                     org.wso2.carbon.mediation:org.wso2.carbon.identity.xacml.mediator.feature:${carbon.mediation.version}
                                 </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.mediation:org.wso2.carbon.mediator.publishevent.feature:${carbon.mediation.version}
+                                </featureArtifactDef>
 
                             </featureArtifacts>
                         </configuration>
@@ -991,10 +994,6 @@
                                 <feature>
                                     <id>org.wso2.carbon.registry.ws.feature.group</id>
                                     <version>${carbon.registry.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.identity.xacml.mediator.feature.group</id>
-                                    <version>${carbon.mediation.version}</version>
                                 </feature>
                                 <!--API Management related feature-->
                                 <feature>
@@ -1590,6 +1589,10 @@
                                     <id>org.wso2.carbon.identity.xacml.mediator.feature.group</id>
                                     <version>${carbon.mediation.version}</version>
                                 </feature>
+                                <feature>
+                                    <id>org.wso2.carbon.mediator.publishevent.feature.group</id>
+                                    <version>${carbon.mediation.version}</version>
+                                </feature>
                             </features>
                         </configuration>
                     </execution>
@@ -1932,10 +1935,6 @@
                                 </feature>
                                 <feature>
                                     <id>org.wso2.carbon.mediator.cache.server.feature.group</id>
-                                    <version>${carbon.mediation.version}</version>
-                                </feature>
-                                <feature>
-                                    <id>org.wso2.carbon.identity.xacml.mediator.feature.group</id>
                                     <version>${carbon.mediation.version}</version>
                                 </feature>
                             </features>
